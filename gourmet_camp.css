@@ -1,0 +1,440 @@
+body {
+    margin: auto;/*背景画像を横幅いっぱいにする*/
+    min-width: 1200px;
+}
+header{
+  height: 400px;
+  background-image: url(top.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.top {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.top_head {
+    display: flex;
+    justify-content: space-between; /*横の距離感の調整*/
+    align-items:center; /*縦の距離感の調整*/
+}
+.logo{
+    width: auto;
+    display: block;
+    margin-left:  20px; /*ロゴにもトップと同じ幅を設定*/
+}
+.nav_menu{
+   display: flex;
+   margin-right: 40px;
+   justify-content: center;
+}
+.nav_menu a{
+   color: #FFFFFF;
+   padding-left: 30px;
+   text-decoration: none;
+}
+/*サイトのロゴ*/
+.logo_top {
+    display: block;
+    margin: 20px auto 10px auto;
+}
+/*検索窓*/
+.search_box{
+    width: 900px;
+    height: 80px;
+    display: flex;
+    margin: 10px auto; /*検索窓とコピー画像間の余白10px*/
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(255, 255, 255, 0.8);
+    font-family: Meiryo;
+    font-weight:bold; 
+}
+ input[name=search_area]{
+    width: 300px;
+    height: 30px;
+}
+ input[name=search_keyword]{
+    width: 300px;
+    height: 30px;
+}
+button[name=search_submit]{
+    display: flex;
+    align-items:center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+/*メイン*/
+main {
+    min-width: 1200px;
+    margin: 20px auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.main_container{
+    width: 800px;
+    margin-left: 40px;
+}
+/*おすすめのエリア*/
+.area_box{
+    display: flex;
+    margin: 0 auto;
+}
+.area_icon{
+    width: 45px;
+    height: 45px;
+}
+.area_list_connect h2 {
+    border-bottom: solid red 2px;
+    margin: 0 auto;
+}
+.area_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;/*ブラウザごとに定義されているuser agent stylesheetの変更*/
+    color:black;
+}
+.area_list li{
+    width: 50px;
+    height: 30px;
+    border: solid #80808052 1px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.area_list li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: "游ゴシック", YuGothic;
+    font-weight: bold;
+}
+/*ホットなスポット*/
+.spot_box{
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+.spot_icon{
+    width: 29px;
+    height: 42px;
+}
+.spot_list_connect h2 {
+    border-bottom: solid red 2px;
+    margin: 0 auto;
+}
+.spot_list{
+    width: 750px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-inline-start: 0px;
+}
+.spot_list li{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 12px;
+}
+.spot_list li a{
+    text-decoration: none;
+    color: black;
+    font-family: "游ゴシック", YuGothic;
+    font-weight: bold;
+}
+.spot_list li a:before {
+    content: ">";
+    color: orange;
+    font-size: 15px;
+}
+/*ジャンルで選ぶ*/
+.genre_box{
+    display: flex;
+    margin: 0 auto;
+}
+.genre_icon{
+    width: 29px;
+    height: 42px;
+}
+.genre_list_connect h2{
+    border-bottom: solid red 2px;
+    margin: 0 auto;
+}
+.genre_list{
+    display: flex;
+    margin: 16px auto;
+}
+.genre_list a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: "游ゴシック", YuGothic;
+    font-weight: bold;
+}
+.genre {
+    margin-right: 10px;
+    border: solid 1px #80808052;
+    width: 100%;
+}
+.genre p{
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+/*こだわりで選ぶ*/
+.obsession_box{
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+.obsession_icon{
+    width: 33px;
+    height: 43px;
+}
+.obsession_list_connect h2{
+    border-bottom: solid red 2px;
+    margin: 0 auto;
+}
+.obsession_list{
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+}
+.obsession_list li{
+    border: solid #80808052 1px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+.obsession_list a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "游ゴシック", YuGothic;
+    font-weight: bold;
+    font-size: small;
+}
+/*ライターのおすすめ*/
+.writer_box{
+    display: flex;
+    margin: 0 auto;
+}
+.writer_icon{
+    width: 40px;
+    height: 40px;
+}
+.post_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid red 2px;
+}
+.post_title h2{
+    margin: 0px;
+}
+.post_title p{
+    margin: 0 auto;
+    font-weight: bold;
+}
+.writer_post_box{
+    display: flex;
+    width: 750px;
+}
+.soba_post {
+    margin: 10px 10px 10px 0px;
+    padding: 5px 10px; 
+    border: solid #80808052 1px;
+    background-color: #FAF8F9;
+}
+.soba_post img{
+    margin-bottom: 10px;
+}
+.Turkey_post{
+    margin: 10px 0px 10px 10px;
+    padding: 5px 10px; 
+    border: solid #80808052 1px;
+    background-color: #FAF8F9;
+}
+.Turkey_post img{
+    margin-bottom: 10px;
+}
+.writer_post_box figcaption{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "游ゴシック", YuGothic;
+}
+/*ユーザーレビュー*/
+.userReview_box{
+    display: flex;
+    margin: 20px auto 20px;
+}
+.userReview_icon{
+    width: 40px;
+    height: 40px;
+}
+.userReview_post_connect h2{
+    border-bottom: solid red 2px;
+    margin: 0px auto;
+}
+.userReview_post_box{
+    display: flex;
+    width: 750px;
+}
+.review_01{
+    margin: 10px 10px 10px 0px;
+    padding: 5px 5px 5px 0px;
+    border: solid #80808052 1px;
+    background-color: #FAF8F9;
+}
+.review_02{
+    margin: 10px 0px 10px 10px;
+    padding: 5px 5px 5px 0px;
+    border: solid #80808052 1px;
+    background-color: #FAF8F9;
+}
+.review_header{
+    align-items:center;
+    display: flex;
+    margin: 10px 5px;
+    padding-bottom: 10px;
+    border-bottom: solid #80808052 1px;
+}
+.review_header img{
+    width: 60px;
+    height: 60px;
+}
+.user_title{
+    margin: 10px 5px;
+}
+.user_title h3{
+    font-size: larger;
+    margin: 0 auto;
+}
+.user_title p{
+    margin: 0 auto;
+    font-size: small;
+}
+.review_01 figcaption{
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.review_02 figcaption{
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.userReview_textL{
+    margin: 10px 10px;
+    font-size: small;
+}
+.userReview_textR{
+    margin: 10px 10px;
+    font-size: small;
+}
+.review_dish{
+    display: flex;
+}
+.review_left{
+    margin-left: 10px;
+}
+.review_right{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+/*ログイン情報*/
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.login_info_box{
+    border: solid #80808052 1px;
+    background-color:#FFFDF1;
+    padding: 25px;
+}
+.login_info{
+    background-color: #FAF8F9;
+    padding: 10px;
+}
+.login_header{
+    align-items:center;
+    display: flex;
+    margin: 10px 5px;
+    padding-bottom: 10px;
+    border-bottom: solid #80808052 1px;
+}
+.login_ID_icon{
+    width: 70px;
+    height: 70px;
+}
+.login_header h4{
+    font-size: larger;
+    margin: 0 auto;
+}
+.login_header p{
+    margin: 0 auto;
+    font-size: small;
+}
+.login_point{
+    display: flex;
+    border-bottom: solid #80808052 1px;
+    align-items:center;
+    font-size: small;
+    font-family: "メイリオ", Meiryo;
+    font-weight: bold;
+}
+.login_point img{
+    width: 30px;
+    height: 30px;
+}
+.point_text{
+    padding-left: 10px;
+    margin-right: 62px;
+}
+.login_rank{
+    display: flex;
+    align-items:center;
+    font-size: small;
+    font-family: "メイリオ", Meiryo;
+    font-weight: bold;
+}
+.login_rank img{
+    width: 33px;
+    height: 22px;
+}
+.rank_text{
+    padding-left: 10px;
+    margin-right: 50px;
+}
+.banner_01{
+    margin: 20px auto;
+}
+/*フッター*/
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: solid 2px #80808033;
+    padding-top: 40px;
+}
+.footer_nav a{
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+}
+.footer_bottom{
+    background-color: #dcd5d5;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
